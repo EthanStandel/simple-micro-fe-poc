@@ -1,0 +1,3 @@
+# Generated with...
+
+`npm create vite@latest application --template react-ts`

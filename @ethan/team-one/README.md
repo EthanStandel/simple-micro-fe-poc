@@ -1,0 +1,3 @@
+# Generated with...
+
+`npm create vite@latest team-one --template react-ts`

@@ -1,0 +1,40 @@
+{
+  "name": "@ethan/team-one",
+  "private": false,
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/lib.umd.js",
+  "module": "./dist/lib.es.js",
+  "types": "./dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lib.es.js",
+      "require": "./dist/lib.umd.js"
+    }
+  },
+  "scripts": {
+    "start": "vite --open",
+    "build": "tsc && vite build",
+    "build:publish": "npm run build && npm publish --registry http://localhost:4873/"
+  },
+  "peerDependencies": {
+    "@ethan/header": "0.0.7"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.9.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "vite-plugin-dts": "^1.2.0"
+  },
+  "devDependencies": {
+    "@ethan/header": "0.0.7",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
